@@ -1,9 +1,10 @@
-import './App.css';
+import './App.scss';
+import ProductList from './components/product-list/ProductList';
 
 function App() {
   return (
     <div className="App">
-      Hello Millie's Bakery
+      <ProductList />
     </div>
   );
 }
