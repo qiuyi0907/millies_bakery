@@ -1,10 +1,10 @@
 import './App.scss';
-import ProductList from './components/product-list/ProductList';
+import CategoryDir from './components/category-directory/CategoryDir';
 
 function App() {
   return (
     <div className="App">
-      <ProductList />
+      <CategoryDir />
     </div>
   );
 }
