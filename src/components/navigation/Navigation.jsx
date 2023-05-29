@@ -1,16 +1,17 @@
 import React from "react";
 import "./navigation.style.scss";
 import {ReactComponent as Logo} from "../../assets/millies_bakery_logo.svg"
+import { Link } from "react-router-dom";
 
 const Navigation = () => {
   return (
     <div>
       <div className="promotion"></div>
-      <div className="logo-section">
+      <Link className="logo-section" to='/'>
         <h4>Millie's</h4>
         <Logo className="logo"/>
         <h4>Bakery</h4>
-      </div>
+      </Link>
       <div className="nav-bar">
         <ul className="nav-list">
           <li className="nav-item">Home</li>
