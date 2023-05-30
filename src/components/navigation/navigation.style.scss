@@ -1,7 +1,25 @@
 .promotion {
     width: 100vw;
-    height: 5vh;
+    height: 8vh;
     background-color: var(--green);
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.account {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+    &:hover {
+        color: black
+    }
+
+    h5 {
+        margin: 0 .5em ;
+    }
 }
 
 .logo-section {
@@ -15,6 +33,8 @@
     .logo {
         width: 10%;
         height: 60%;
+        position: relative;
+        top: -1em;
     }
 
     h4 {

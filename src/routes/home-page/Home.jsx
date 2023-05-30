@@ -1,12 +1,14 @@
-import React from 'react'
-import CategoryDir from '../../components/category-directory/CategoryDir'
+import React from "react";
+import CategoryDir from "../../components/category-directory/CategoryDir";
+import HomeImg from "../../components/home-img/HomeImg";
 
 const Home = () => {
   return (
     <div>
-        <CategoryDir />
+      <HomeImg />
+      <CategoryDir />
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
