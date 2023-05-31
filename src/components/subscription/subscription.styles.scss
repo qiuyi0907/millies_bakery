@@ -1,0 +1,33 @@
+.subscription {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h3 {
+        margin-top: 1.5em;
+        // margin-bottom: 1em;
+    }
+}
+
+.subscribe-input {
+    padding: 0.25em 1em ;
+    font-family: 'Patrick Hand';
+    width: 30vw;
+    border: 1px solid white;
+}
+
+.subscribe-submit {
+    border: none;
+    background-color: var(--green);
+    color: white;
+    margin-left: .5em;
+
+    i {
+        cursor: pointer;
+    }
+
+    i:hover {
+        color: black
+    }
+}

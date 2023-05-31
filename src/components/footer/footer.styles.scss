@@ -1,0 +1,38 @@
+.footer {
+    background-color: var(--green);
+}
+
+.footer-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 4em 0;
+}
+
+.social-media-container {
+    display: flex;
+    flex-direction: row;
+
+    i {
+        margin: 1em .5em;
+    }
+}
+
+.links-container {
+    display: flex;
+    flex-wrap: wrap;
+
+    p {
+        width: 50%;
+    }
+}
+
+.contact-item-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    i {
+        margin-right: .5em;
+    }
+}
