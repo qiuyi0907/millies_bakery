@@ -5,6 +5,7 @@ import { Routes, Route } from "react-router-dom";
 import { Fragment } from "react"
 import LogIn from "./routes/login/LogIn";
 import Register from "./routes/register/Register";
+import Footer from "./components/footer/Footer";
 function App() {
   return (
     <Fragment>
@@ -14,6 +15,7 @@ function App() {
         <Route path="/login" element={<LogIn />} />
         <Route path="/register" element={<Register />} />
       </Routes>
+      <Footer />
     </Fragment>
   );
 }

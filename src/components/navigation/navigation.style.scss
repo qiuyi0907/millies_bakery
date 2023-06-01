@@ -90,5 +90,9 @@
         list-style-type: none;
         color: white;
         text-align: center;
+
+        &:hover {
+            color: black;
+        }
     }
 }

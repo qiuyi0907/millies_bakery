@@ -1,0 +1,27 @@
+.sign-up-container {
+    width: 80%;
+    margin: 0 auto;
+
+    h4 {
+        margin-top: 2em;
+    }
+
+    form {
+        margin: 3em 0;
+    }
+}
+
+
+
+.signup-input-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+    .input-container {
+        width: 48%;
+        margin: .5em 0;
+    }
+    
+}

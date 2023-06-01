@@ -1,0 +1,24 @@
+.log-in-page {
+    display: flex;
+    flex-direction: row;
+}
+
+.log-in-left {
+    margin: 5vw;;
+    flex: 1.5;
+
+    .log-in-body {
+        h4 {
+            margin-bottom: 1em;
+        }
+    
+        p {
+            margin: 0;
+        }
+    }
+
+    button {
+        margin-top: 3em;
+        float: right;
+    }
+}

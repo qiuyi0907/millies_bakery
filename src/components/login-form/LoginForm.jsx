@@ -1,5 +1,5 @@
 import React from 'react'
-import './login.styles.scss'
+import './login-form.styles.scss'
 import { useState } from 'react';
 import FormInput from '../form-input/FormInput';
 
@@ -9,6 +9,7 @@ import {
     CreateUserFromAuth,
     signInAuthUserWithEmailAndPassword,
   } from '../../utils/firebase/firebase-utils';
+import Button from '../button/Button';
 
   const defaultLoginInformation = {
     email: '',
@@ -59,8 +60,8 @@ const LoginForm = () => {
   };
 
   return (
-    <div className='sign-up-container'>
-      <h2>Already have an account?</h2>
+    <div className='log-in-container'>
+      <h4>Already have an account?</h4>
       <span>Sign in with your email and password</span>
       <form onSubmit={handleSubmit}>
         <FormInput
@@ -86,10 +87,8 @@ const LoginForm = () => {
           }}
         />
         <div className='buttons-container'>
-          <button type='submit'>Sign In</button>
-          <button type='button' onClick={signInWithGoogle}>
-            Google sign in
-          </button>
+          <Button content='Sign In' type='submit'/>
+          <Button content='Sign in with Google'onClick={signInWithGoogle} type='button'/>
         </div>
       </form>
     </div>
