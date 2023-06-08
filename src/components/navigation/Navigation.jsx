@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./navigation.style.scss";
 import { ReactComponent as Logo } from "../../assets/millies_bakery_logo.svg";
 import { Link } from "react-router-dom";
+import { UserContext } from "../../contexts/user-contexts";
 
 const Navigation = () => {
+  const { currentUser } = useContext(UserContext);
   return (
     <div>
       {/* top-bar */}
@@ -16,12 +18,21 @@ const Navigation = () => {
         </div>
 
         <div className="top-bar-right">
-          <Link to="/login">
+          {currentUser ? (
+          <Link to="/user-account">
             <div className="account">
               <i class="fa-solid fa-user account-icon" />
               <h6>My Account</h6>
             </div>
           </Link>
+          ) : (
+          <Link to="/login">
+            <div className="account">
+              <i class="fa-solid fa-user account-icon" />
+              <h6>Login</h6>
+            </div>
+          </Link>
+          )}
           <i class="fa-solid fa-cart-shopping"></i>
         </div>
       </div>

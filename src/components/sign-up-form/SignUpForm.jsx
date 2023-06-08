@@ -1,4 +1,3 @@
-import React from "react";
 import { useState } from "react";
 import FormInput from "../form-input/FormInput";
 import {
@@ -7,6 +6,7 @@ import {
 } from "../../utils/firebase/firebase-utils";
 
 import './signup-form.styles.scss'
+import Button from "../button/Button";
 
 const defaultUserInformation = {
   firstName: "",
@@ -38,8 +38,6 @@ const SignUpForm = () => {
     petBreed,
   } = userInformstion;
 
-  console.log(userInformstion);
-
   const resetUserInformation = () => {
     setUserInformation(defaultUserInformation);
   };
@@ -57,6 +55,7 @@ const SignUpForm = () => {
         email,
         password
       );
+
       await CreateUserFromAuth(response.user, {
         firstName,
         lastName,
@@ -205,7 +204,7 @@ const SignUpForm = () => {
           />
         </div>
 
-        <button type="submit">Sign Up</button>
+        <Button content={'Sign Up'} type="submit"/>
       </form>
     </div>
   );

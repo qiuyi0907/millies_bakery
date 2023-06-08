@@ -6,6 +6,7 @@ import { Fragment } from "react"
 import LogIn from "./routes/login/LogIn";
 import Register from "./routes/register/Register";
 import Footer from "./components/footer/Footer";
+import UserAccount from "./routes/user-account/UserAccount";
 function App() {
   return (
     <Fragment>
@@ -14,6 +15,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<LogIn />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/user-account" element={<UserAccount />} />
       </Routes>
       <Footer />
     </Fragment>
