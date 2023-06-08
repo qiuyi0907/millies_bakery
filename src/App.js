@@ -7,6 +7,7 @@ import LogIn from "./routes/login/LogIn";
 import Register from "./routes/register/Register";
 import Footer from "./components/footer/Footer";
 import UserAccount from "./routes/user-account/UserAccount";
+import { Menu } from "./routes/menu/Menu";
 function App() {
   return (
     <Fragment>
@@ -16,6 +17,7 @@ function App() {
         <Route path="/login" element={<LogIn />} />
         <Route path="/register" element={<Register />} />
         <Route path="/user-account" element={<UserAccount />} />
+        <Route path="/menu" element={<Menu />} />
       </Routes>
       <Footer />
     </Fragment>

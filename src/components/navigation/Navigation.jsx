@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import "./navigation.style.scss";
 import { ReactComponent as Logo } from "../../assets/millies_bakery_logo.svg";
 import { Link } from "react-router-dom";
-import { UserContext } from "../../contexts/user-contexts";
+import { UserContext } from "../../contexts/user-context";
 
 const Navigation = () => {
   const { currentUser } = useContext(UserContext);
